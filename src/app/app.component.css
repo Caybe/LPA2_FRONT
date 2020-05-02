@@ -1,12 +1,14 @@
-header{
-    padding: 10px;
-    height: 70px;
-    margin-bottom: 20px;
-    background-color: #682f1c;
-    color : white;
-    font-size: 2em;
-}
-
 html{
    background-color: ivory;
 }
+
+ .toolbar {
+    height: 60px;
+    padding-left: 20px;
+    margin-bottom: 30px;;
+    display: flex;
+    align-items: center;
+    background-color: #682f1c;
+    color: white;
+    font-weight: 600;
+  }

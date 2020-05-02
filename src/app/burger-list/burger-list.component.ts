@@ -9,11 +9,13 @@ import { BurgersService } from '../swagger/api/burgers.service';
 export class BurgerListComponent implements OnInit {
 
   burgerList;
+  breakpoint;
 
   constructor(private burgersService : BurgersService) { }
 
   ngOnInit() {
     this.getBurgers();
+    this.breakpoint = (window.innerWidth <= 600) ? 2 : 6;
   }
 
   getBurgers() : void {
@@ -21,4 +23,7 @@ export class BurgerListComponent implements OnInit {
         .subscribe(burgerList => this.burgerList = burgerList);
   }
 
+  onResize(event) {
+    this.breakpoint = (event.target.innerWidth <= 600) ? 2 : 6;
+  }
 }

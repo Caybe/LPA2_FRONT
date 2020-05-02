@@ -1,4 +1,4 @@
-<mat-grid-list cols="6" rowHeight="200px">
+<mat-grid-list [cols]="breakpoint" rowHeight="200px" (window:resize)="onResize($event)">
     <mat-grid-tile [colspan]="2" [rowspan]="3" *ngFor="let burger of burgerList">
       <mat-card class="card-list-burger">
         <mat-card-header>
@@ -10,8 +10,8 @@
           <p>{{burger.price}} €</p>
         </mat-card-content>
         <mat-card-actions>
-          <a mat-stroked-button routerLink="burger/{{burger.id}}">View</a>
+          <a mat-raised-button routerLink="burger/{{burger.id}}">View</a>
         </mat-card-actions>
       </mat-card>
     </mat-grid-tile>
-  </mat-grid-list>
+</mat-grid-list>

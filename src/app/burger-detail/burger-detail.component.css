@@ -1,6 +1,7 @@
 .card-detail-burger {
-    margin: auto;    
-    max-width: 500px;
+    margin: auto;  
+    max-width: 400px;
+    max-height: min-content;
     background-color: #682f1c;
     color: white;        
 }

@@ -2,6 +2,7 @@
     <mat-card-header>
       <div mat-card-avatar></div>
       <mat-card-title>{{burger.name}}</mat-card-title>
+      <mat-card-subtitle class="card-detail-burger" >{{burger.price}} €</mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image src="{{burger.image}}">
     <mat-card-content>
@@ -9,10 +10,9 @@
         <mat-list-item role="listitem" class="card-detail-burger">Nutriscore : {{burger.nutriscore}}</mat-list-item>
         <mat-list-item role="listitem" class="card-detail-burger">Satured Fat : {{burger.nutriments['saturated-fat']}}</mat-list-item>
         <mat-list-item role="listitem" class="card-detail-burger">Energy Kcal : {{burger.nutriments['energy-kcal']}}</mat-list-item>
-        <mat-list-item role="listitem" class="card-detail-burger">Price : {{burger.price}} €</mat-list-item>
       </mat-list>
     </mat-card-content>
     <mat-card-actions>
-      <a mat-stroked-button (click)="goBack()">Return</a>
+      <a mat-raised-button (click)="goBack()">Return</a>
     </mat-card-actions>
   </mat-card>

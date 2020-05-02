@@ -30,7 +30,8 @@ import { MatListModule } from '@angular/material/list';
     MatCardModule,
     MatButtonModule,
     MatGridListModule,
-    MatListModule
+    MatListModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
